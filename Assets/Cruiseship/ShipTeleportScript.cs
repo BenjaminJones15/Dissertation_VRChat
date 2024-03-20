@@ -1,15 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ShipTeleportScript : MonoBehaviour
 {
     public GameObject Player;
     public Transform FrontTarget;
     public Transform MainDeckTarget;
-    public Transform EgyptTarget;
-    public Transform SafariTarget;
-    public Transform JapanTarget;
+    public string ScenePath;
 
     // Start is called before the first frame update
     void Start()
@@ -29,17 +28,9 @@ public class ShipTeleportScript : MonoBehaviour
             {
                 Player.transform.position = MainDeckTarget.transform.position;
             }
-            else if (EgyptTarget != null)
+            else
             {
-                Player.transform.position = EgyptTarget.transform.position;
-            }
-            else if (SafariTarget != null)
-            {
-                Player.transform.position = SafariTarget.transform.position;
-            }
-            else if (JapanTarget != null)
-            {
-                Player.transform.position = JapanTarget.transform.position;
+                SceneManager.LoadSceneAsync(ScenePath);
             }
         }
     }
