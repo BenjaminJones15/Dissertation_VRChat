@@ -1749,7 +1749,7 @@ MonoBehaviour:
   Player: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
   FrontTarget: {fileID: 0}
   MainDeckTarget: {fileID: 0}
-  ScenePath: 
+  ScenePath: Scenes/Safari Scene
 --- !u!1001 &877729640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2380,7 +2380,7 @@ MonoBehaviour:
   Player: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
   FrontTarget: {fileID: 0}
   MainDeckTarget: {fileID: 0}
-  ScenePath: 
+  ScenePath: Scenes/Japan Scene
 --- !u!1 &1332802889
 GameObject:
   m_ObjectHideFlags: 0
